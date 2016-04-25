@@ -1,0 +1,15 @@
+<map id="bzero" name="bzero">
+<area shape="rect" id="node2" href="$pmap_8c.html#ab7aeaf27a95da4045fc98a220c1bd623" title="mips_detect_memory" alt="" coords="108,5,255,32"/>
+<area shape="rect" id="node5" href="$pmap_8c.html#a8c214bdcdeb8fd1c10b92064993b06c8" title="page_alloc" alt="" coords="139,81,223,108"/>
+<area shape="rect" id="node3" href="$init_8c.html#a298f168cfd313363d64f6109fcc92060" title="mips_init" alt="" coords="443,81,518,108"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="600,81,651,108"/>
+<area shape="rect" id="node6" href="$env_8c.html#a9b2eab65e268bbcbc3f6dc589960da8f" title="env_init" alt="" coords="311,81,377,108"/>
+<area shape="rect" id="node7" href="$pmap_8c.html#abf9f6e3ea88d66cd02215aa3164c3675" title="pgdir_walk" alt="" coords="303,132,385,159"/>
+<area shape="rect" id="node9" href="$pmap_8c.html#ad7181cbb1ac0b5a723fdd3c7ab632be7" title="page_check" alt="" coords="860,157,952,184"/>
+<area shape="rect" id="node10" href="$pmap_8c.html#afcf5446100566f2c160587ea4acc4f4d" title="pageout" alt="" coords="872,69,940,96"/>
+<area shape="rect" id="node8" href="$pmap_8c.html#a11a0ccd31805e93b2a0e709b4e581972" title="page_insert" alt="" coords="723,107,812,133"/>
+<area shape="rect" id="node11" href="$pmap_8c.html#a7b4af94efdd9dc748a592ed75885aa45" title="page_lookup" alt="" coords="433,183,528,209"/>
+<area shape="rect" id="node12" href="$pmap_8c.html#a3a16e20dc4be360720097b9f3d61d85d" title="page_remove" alt="" coords="576,183,675,209"/>
+<area shape="rect" id="node13" href="$env_8c.html#a62e4f36682fdb5effac6a6dcb879c96f" title="env_free" alt="" coords="733,208,802,235"/>
+<area shape="rect" id="node14" href="$env_8c.html#ad634eb22a286adce67cf80c05c7325b3" title="env_destroy" alt="" coords="861,208,951,235"/>
+</map>

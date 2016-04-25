@@ -1,0 +1,955 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/queue.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_73124da8a6e04afc2f30d4aeaf45363b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle">
+<div class="title">queue.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h__dep__incl.png" border="0" usemap="#_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2queue_8hdep" alt=""/></div>
+<map name="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2queue_8hdep" id="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2queue_8hdep">
+<area shape="rect" id="node2" href="env_8h.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/include/env.h" alt="" coords="613,109,792,165"/>
+<area shape="rect" id="node9" href="pmap_8h.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/include/pmap.h" alt="" coords="816,109,995,165"/>
+<area shape="rect" id="node3" href="init_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/init.c" alt="" coords="208,213,387,269"/>
+<area shape="rect" id="node4" href="env_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/env.c" alt="" coords="411,213,589,269"/>
+<area shape="rect" id="node5" href="sched_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/sched.c" alt="" coords="613,213,792,269"/>
+<area shape="rect" id="node6" href="syscall__all_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/syscall_all.c" alt="" coords="816,213,995,269"/>
+<area shape="rect" id="node7" href="traps_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/traps.c" alt="" coords="5,213,184,269"/>
+<area shape="rect" id="node8" href="pmap_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/mm/pmap.c" alt="" coords="1019,213,1197,269"/>
+<area shape="rect" id="node10" href="main_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/main.c" alt="" coords="1221,213,1400,269"/>
+<area shape="rect" id="node11" href="kernel__elfloader_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/kernel_elfloader.c" alt="" coords="1424,213,1603,269"/>
+</map>
+</div>
+</div>
+<p><a href="queue_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae72219f63b2fe9bce774a64e11404179"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ae72219f63b2fe9bce774a64e11404179">LIST_HEAD</a>(name,  type)</td></tr>
+<tr class="separator:ae72219f63b2fe9bce774a64e11404179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7b8e9f9968d3152a8519cd9a45312e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a5d7b8e9f9968d3152a8519cd9a45312e">LIST_HEAD_INITIALIZER</a>(head)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> }</td></tr>
+<tr class="separator:a5d7b8e9f9968d3152a8519cd9a45312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2ccd0e8c215504508af23f04480be6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aec2ccd0e8c215504508af23f04480be6">LIST_ENTRY</a>(type)</td></tr>
+<tr class="separator:aec2ccd0e8c215504508af23f04480be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59ab30a8f9a88af86422600c38125cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af59ab30a8f9a88af86422600c38125cf">LIST_EMPTY</a>(head)&#160;&#160;&#160;((head)-&gt;lh_first == <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td></tr>
+<tr class="separator:af59ab30a8f9a88af86422600c38125cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f223070a7fe7c5f24033e9d8fbeb610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a>(head)&#160;&#160;&#160;((head)-&gt;lh_first)</td></tr>
+<tr class="separator:a8f223070a7fe7c5f24033e9d8fbeb610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1543beeb6d9224b60feb7a2703b2a87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac1543beeb6d9224b60feb7a2703b2a87">LIST_FOREACH</a>(var,  head,  field)</td></tr>
+<tr class="separator:ac1543beeb6d9224b60feb7a2703b2a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304b5b7f7bdcba2793eaba9c890991c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a304b5b7f7bdcba2793eaba9c890991c3">LIST_INIT</a>(head)</td></tr>
+<tr class="separator:a304b5b7f7bdcba2793eaba9c890991c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab62f53d4c94ab67bf7c4dc5c7670f64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aab62f53d4c94ab67bf7c4dc5c7670f64">LIST_INSERT_AFTER</a>(listelm,  elm,  field)</td></tr>
+<tr class="separator:aab62f53d4c94ab67bf7c4dc5c7670f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d12127b84f84215eb03a4fb20feebb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a73d12127b84f84215eb03a4fb20feebb">LIST_INSERT_BEFORE</a>(listelm,  elm,  field)</td></tr>
+<tr class="separator:a73d12127b84f84215eb03a4fb20feebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80d8d658fdb46a9f7cc81cb2ae54885"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ad80d8d658fdb46a9f7cc81cb2ae54885">LIST_INSERT_HEAD</a>(head,  elm,  field)</td></tr>
+<tr class="separator:ad80d8d658fdb46a9f7cc81cb2ae54885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad150fcc4dc3e0a56600101f1f1065ed5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>(elm,  field)&#160;&#160;&#160;((elm)-&gt;field.le_next)</td></tr>
+<tr class="separator:ad150fcc4dc3e0a56600101f1f1065ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f60a3fedbebc5ef6edded99062dd98d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a4f60a3fedbebc5ef6edded99062dd98d">LIST_REMOVE</a>(elm,  field)</td></tr>
+<tr class="separator:a4f60a3fedbebc5ef6edded99062dd98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abce769a262e090c1f601605b9d6c76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a4abce769a262e090c1f601605b9d6c76">TAILQ_HEAD</a>(name,  type)</td></tr>
+<tr class="separator:a4abce769a262e090c1f601605b9d6c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71bfd90dc9d00fb03545fe66c67d673"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af71bfd90dc9d00fb03545fe66c67d673">TAILQ_ENTRY</a>(type)</td></tr>
+<tr class="separator:af71bfd90dc9d00fb03545fe66c67d673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449d224023780e46253b83b61e0a50a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a449d224023780e46253b83b61e0a50a9">TAILQ_INIT</a>(head)</td></tr>
+<tr class="separator:a449d224023780e46253b83b61e0a50a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f99e8f322ea4eef2d9deaa505239a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af0f99e8f322ea4eef2d9deaa505239a6">TAILQ_INSERT_HEAD</a>(head,  elm,  field)</td></tr>
+<tr class="separator:af0f99e8f322ea4eef2d9deaa505239a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512bee16b46f601078c96c776d2648c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a512bee16b46f601078c96c776d2648c3">TAILQ_INSERT_TAIL</a>(head,  elm,  field)</td></tr>
+<tr class="separator:a512bee16b46f601078c96c776d2648c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af972e33f5eacef659ee0bf0a13ca518c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af972e33f5eacef659ee0bf0a13ca518c">TAILQ_INSERT_AFTER</a>(head,  listelm,  elm,  field)</td></tr>
+<tr class="separator:af972e33f5eacef659ee0bf0a13ca518c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a41e17dbc7d8df1f8b353a036754ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac6a41e17dbc7d8df1f8b353a036754ff">TAILQ_INSERT_BEFORE</a>(listelm,  elm,  field)</td></tr>
+<tr class="separator:ac6a41e17dbc7d8df1f8b353a036754ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae87ca18c28066e1a96221e762d1209"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aaae87ca18c28066e1a96221e762d1209">TAILQ_REMOVE</a>(head,  elm,  field)</td></tr>
+<tr class="separator:aaae87ca18c28066e1a96221e762d1209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac564235b07f0c8c8db2a7957d37300ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac564235b07f0c8c8db2a7957d37300ee">CIRCLEQ_HEAD</a>(name,  type)</td></tr>
+<tr class="separator:ac564235b07f0c8c8db2a7957d37300ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5774651e7db6bcecf18d2b92259707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#abc5774651e7db6bcecf18d2b92259707">CIRCLEQ_ENTRY</a>(type)</td></tr>
+<tr class="separator:abc5774651e7db6bcecf18d2b92259707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c12c697981b6dbe21822ccdfd8decfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a2c12c697981b6dbe21822ccdfd8decfd">CIRCLEQ_INIT</a>(head)</td></tr>
+<tr class="separator:a2c12c697981b6dbe21822ccdfd8decfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108b36ff00cbf59efbbf185baac770b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a108b36ff00cbf59efbbf185baac770b4">CIRCLEQ_INSERT_AFTER</a>(head,  listelm,  elm,  field)</td></tr>
+<tr class="separator:a108b36ff00cbf59efbbf185baac770b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cda165eacfbfe150e86c12baa96089"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af5cda165eacfbfe150e86c12baa96089">CIRCLEQ_INSERT_BEFORE</a>(head,  listelm,  elm,  field)</td></tr>
+<tr class="separator:af5cda165eacfbfe150e86c12baa96089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2826789c50d93610c6c1e2f76651259a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a2826789c50d93610c6c1e2f76651259a">CIRCLEQ_INSERT_HEAD</a>(head,  elm,  field)</td></tr>
+<tr class="separator:a2826789c50d93610c6c1e2f76651259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b767125267fa26ca10e21fa358008c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aa2b767125267fa26ca10e21fa358008c">CIRCLEQ_INSERT_TAIL</a>(head,  elm,  field)</td></tr>
+<tr class="separator:aa2b767125267fa26ca10e21fa358008c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b066e803ee2f2a3ead6e4c632b7e49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ae1b066e803ee2f2a3ead6e4c632b7e49">CIRCLEQ_REMOVE</a>(head,  elm,  field)</td></tr>
+<tr class="separator:ae1b066e803ee2f2a3ead6e4c632b7e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="abc5774651e7db6bcecf18d2b92259707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>{                                \</div><div class="line">    struct type *cqe_next;      <span class="comment">/* next element */</span>      \</div><div class="line">    struct type *cqe_prev;      <span class="comment">/* previous element */</span>      \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac564235b07f0c8c8db2a7957d37300ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>name {                               \</div><div class="line">    struct type *cqh_first;     <span class="comment">/* first element */</span>     \</div><div class="line">    struct type *cqh_last;      <span class="comment">/* last element */</span>      \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c12c697981b6dbe21822ccdfd8decfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_INIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{                       \</div><div class="line">    (head)-&gt;cqh_first = (<span class="keywordtype">void</span> *)(head);             \</div><div class="line">    (head)-&gt;cqh_last = (<span class="keywordtype">void</span> *)(head);              \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00182">182</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a108b36ff00cbf59efbbf185baac770b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_INSERT_AFTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{       \</div><div class="line">    (elm)-&gt;field.cqe_next = (listelm)-&gt;field.cqe_next;      \</div><div class="line">    (elm)-&gt;field.cqe_prev = (listelm);              \</div><div class="line">    if ((listelm)-&gt;field.cqe_next == (<span class="keywordtype">void</span> *)(head))        \</div><div class="line">        (head)-&gt;cqh_last = (elm);               \</div><div class="line">    else                                \</div><div class="line">        (listelm)-&gt;field.cqe_next-&gt;field.cqe_prev = (elm);  \</div><div class="line">    (listelm)-&gt;field.cqe_next = (elm);              \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00187">187</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5cda165eacfbfe150e86c12baa96089"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_INSERT_BEFORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{       \</div><div class="line">    (elm)-&gt;field.cqe_next = (listelm);              \</div><div class="line">    (elm)-&gt;field.cqe_prev = (listelm)-&gt;field.cqe_prev;      \</div><div class="line">    if ((listelm)-&gt;field.cqe_prev == (<span class="keywordtype">void</span> *)(head))        \</div><div class="line">        (head)-&gt;cqh_first = (elm);              \</div><div class="line">    else                                \</div><div class="line">        (listelm)-&gt;field.cqe_prev-&gt;field.cqe_next = (elm);  \</div><div class="line">    (listelm)-&gt;field.cqe_prev = (elm);              \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00197">197</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2826789c50d93610c6c1e2f76651259a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_INSERT_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    (elm)-&gt;field.cqe_next = (head)-&gt;cqh_first;          \</div><div class="line">    (elm)-&gt;field.cqe_prev = (<span class="keywordtype">void</span> *)(head);             \</div><div class="line">    if ((head)-&gt;cqh_last == (<span class="keywordtype">void</span> *)(head))             \</div><div class="line">        (head)-&gt;cqh_last = (elm);               \</div><div class="line">    else                                \</div><div class="line">        (head)-&gt;cqh_first-&gt;field.cqe_prev = (elm);      \</div><div class="line">    (head)-&gt;cqh_first = (elm);                  \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2b767125267fa26ca10e21fa358008c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_INSERT_TAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    (elm)-&gt;field.cqe_next = (<span class="keywordtype">void</span> *)(head);             \</div><div class="line">    (elm)-&gt;field.cqe_prev = (head)-&gt;cqh_last;           \</div><div class="line">    if ((head)-&gt;cqh_first == (<span class="keywordtype">void</span> *)(head))            \</div><div class="line">        (head)-&gt;cqh_first = (elm);              \</div><div class="line">    else                                \</div><div class="line">        (head)-&gt;cqh_last-&gt;field.cqe_next = (elm);       \</div><div class="line">    (head)-&gt;cqh_last = (elm);                   \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1b066e803ee2f2a3ead6e4c632b7e49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLEQ_REMOVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    if ((elm)-&gt;field.cqe_next == (<span class="keywordtype">void</span> *)(head))            \</div><div class="line">        (head)-&gt;cqh_last = (elm)-&gt;field.cqe_prev;       \</div><div class="line">    else                                \</div><div class="line">        (elm)-&gt;field.cqe_next-&gt;field.cqe_prev =         \</div><div class="line">            (elm)-&gt;field.cqe_prev;              \</div><div class="line">    if ((elm)-&gt;field.cqe_prev == (<span class="keywordtype">void</span> *)(head))            \</div><div class="line">        (head)-&gt;cqh_first = (elm)-&gt;field.cqe_next;      \</div><div class="line">    else                                \</div><div class="line">        (elm)-&gt;field.cqe_prev-&gt;field.cqe_next =         \</div><div class="line">            (elm)-&gt;field.cqe_next;              \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00227">227</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af59ab30a8f9a88af86422600c38125cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_EMPTY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td>&#160;&#160;&#160;((head)-&gt;lh_first == <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec2ccd0e8c215504508af23f04480be6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>{                                \</div><div class="line">    struct type *le_next;   <span class="comment">/* next element */</span>          \</div><div class="line">    struct type **le_prev;  <span class="comment">/* address of previous next element */</span>  \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f223070a7fe7c5f24033e9d8fbeb610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_FIRST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td>&#160;&#160;&#160;((head)-&gt;lh_first)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1543beeb6d9224b60feb7a2703b2a87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_FOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = <a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a>((head));                \</div><div class="line">        (var);                          \</div><div class="line">        (var) = <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((var), field))</div><div class="ttc" id="queue_8h_html_a8f223070a7fe7c5f24033e9d8fbeb610"><div class="ttname"><a href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a></div><div class="ttdeci">#define LIST_FIRST(head)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00056">queue.h:56</a></div></div>
+<div class="ttc" id="queue_8h_html_ad150fcc4dc3e0a56600101f1f1065ed5"><div class="ttname"><a href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a></div><div class="ttdeci">#define LIST_NEXT(elm, field)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00089">queue.h:89</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae72219f63b2fe9bce774a64e11404179"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>name {                               \</div><div class="line">    struct type *lh_first;  <span class="comment">/* first element */</span>         \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d7b8e9f9968d3152a8519cd9a45312e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_HEAD_INITIALIZER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a304b5b7f7bdcba2793eaba9c890991c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_INIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                        <a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">\</a></div><div class="line"><a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">	LIST_FIRST</a>((head)) = <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                 \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+<div class="ttc" id="queue_8h_html_a8f223070a7fe7c5f24033e9d8fbeb610"><div class="ttname"><a href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a></div><div class="ttdeci">#define LIST_FIRST(head)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00056">queue.h:56</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab62f53d4c94ab67bf7c4dc5c7670f64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_INSERT_AFTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {            \</div><div class="line">    if ((<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field) = <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((listelm), field)) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">\</a></div><div class="line"><a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">		LIST_NEXT</a>((listelm), field)-&gt;field.le_prev =      \</div><div class="line">            &amp;<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field);               <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">\</a></div><div class="line"><a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">	LIST_NEXT</a>((listelm), field) = (elm);               \</div><div class="line">    (elm)-&gt;field.le_prev = &amp;<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((listelm), field);        \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+<div class="ttc" id="queue_8h_html_ad150fcc4dc3e0a56600101f1f1065ed5"><div class="ttname"><a href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a></div><div class="ttdeci">#define LIST_NEXT(elm, field)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00089">queue.h:89</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73d12127b84f84215eb03a4fb20feebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_INSERT_BEFORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {            \</div><div class="line">    (elm)-&gt;field.le_prev = (listelm)-&gt;field.le_prev;        <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">\</a></div><div class="line"><a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">	LIST_NEXT</a>((elm), field) = (listelm);               \</div><div class="line">    *(listelm)-&gt;field.le_prev = (elm);              \</div><div class="line">    (listelm)-&gt;field.le_prev = &amp;<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field);        \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="queue_8h_html_ad150fcc4dc3e0a56600101f1f1065ed5"><div class="ttname"><a href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a></div><div class="ttdeci">#define LIST_NEXT(elm, field)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00089">queue.h:89</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad80d8d658fdb46a9f7cc81cb2ae54885"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_INSERT_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                \</div><div class="line">    if ((<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field) = <a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a>((head))) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) <a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">\</a></div><div class="line"><a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">		LIST_FIRST</a>((head))-&gt;field.le_prev = &amp;<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field);<a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">\</a></div><div class="line"><a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">	LIST_FIRST</a>((head)) = (elm);                    \</div><div class="line">    (elm)-&gt;field.le_prev = &amp;<a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a>((head));         \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+<div class="ttc" id="queue_8h_html_a8f223070a7fe7c5f24033e9d8fbeb610"><div class="ttname"><a href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a></div><div class="ttdeci">#define LIST_FIRST(head)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00056">queue.h:56</a></div></div>
+<div class="ttc" id="queue_8h_html_ad150fcc4dc3e0a56600101f1f1065ed5"><div class="ttname"><a href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a></div><div class="ttdeci">#define LIST_NEXT(elm, field)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00089">queue.h:89</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad150fcc4dc3e0a56600101f1f1065ed5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_NEXT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((elm)-&gt;field.le_next)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f60a3fedbebc5ef6edded99062dd98d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_REMOVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                    \</div><div class="line">    if (<a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">\</a></div><div class="line"><a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">		LIST_NEXT</a>((elm), field)-&gt;field.le_prev =      \</div><div class="line">            (elm)-&gt;field.le_prev;               \</div><div class="line">    *(elm)-&gt;field.le_prev = <a class="code" href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a>((elm), field);        \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+<div class="ttc" id="queue_8h_html_ad150fcc4dc3e0a56600101f1f1065ed5"><div class="ttname"><a href="queue_8h.html#ad150fcc4dc3e0a56600101f1f1065ed5">LIST_NEXT</a></div><div class="ttdeci">#define LIST_NEXT(elm, field)</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00089">queue.h:89</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af71bfd90dc9d00fb03545fe66c67d673"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>{                                \</div><div class="line">    struct type *tqe_next;  <span class="comment">/* next element */</span>          \</div><div class="line">    struct type **tqe_prev; <span class="comment">/* address of previous next element */</span>  \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4abce769a262e090c1f601605b9d6c76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>name {                               \</div><div class="line">    struct type *tqh_first; <span class="comment">/* first element */</span>         \</div><div class="line">    struct type **tqh_last; <span class="comment">/* addr of last next element */</span>     \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a449d224023780e46253b83b61e0a50a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_INIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{                       \</div><div class="line">    (head)-&gt;tqh_first = <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                   \</div><div class="line">    (head)-&gt;tqh_last = &amp;(head)-&gt;tqh_first;              \</div><div class="line">}</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af972e33f5eacef659ee0bf0a13ca518c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_INSERT_AFTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{           \</div><div class="line">    if (((elm)-&gt;field.tqe_next = (listelm)-&gt;field.tqe_next) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)\</div><div class="line">        (elm)-&gt;field.tqe_next-&gt;field.tqe_prev =         \</div><div class="line">            &amp;(elm)-&gt;field.tqe_next;             \</div><div class="line">    else                                \</div><div class="line">        (head)-&gt;tqh_last = &amp;(elm)-&gt;field.tqe_next;      \</div><div class="line">    (listelm)-&gt;field.tqe_next = (elm);              \</div><div class="line">    (elm)-&gt;field.tqe_prev = &amp;(listelm)-&gt;field.tqe_next;     \</div><div class="line">}</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00138">138</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a41e17dbc7d8df1f8b353a036754ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_INSERT_BEFORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">listelm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{           \</div><div class="line">    (elm)-&gt;field.tqe_prev = (listelm)-&gt;field.tqe_prev;      \</div><div class="line">    (elm)-&gt;field.tqe_next = (listelm);              \</div><div class="line">    *(listelm)-&gt;field.tqe_prev = (elm);             \</div><div class="line">    (listelm)-&gt;field.tqe_prev = &amp;(elm)-&gt;field.tqe_next;     \</div><div class="line">}</div></div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00148">148</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0f99e8f322ea4eef2d9deaa505239a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_INSERT_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    if (((elm)-&gt;field.tqe_next = (head)-&gt;tqh_first) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)    \</div><div class="line">        (head)-&gt;tqh_first-&gt;field.tqe_prev =         \</div><div class="line">            &amp;(elm)-&gt;field.tqe_next;             \</div><div class="line">    else                                \</div><div class="line">        (head)-&gt;tqh_last = &amp;(elm)-&gt;field.tqe_next;      \</div><div class="line">    (head)-&gt;tqh_first = (elm);                  \</div><div class="line">    (elm)-&gt;field.tqe_prev = &amp;(head)-&gt;tqh_first;         \</div><div class="line">}</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a512bee16b46f601078c96c776d2648c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_INSERT_TAIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    (elm)-&gt;field.tqe_next = <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                   \</div><div class="line">    (elm)-&gt;field.tqe_prev = (head)-&gt;tqh_last;           \</div><div class="line">    *(head)-&gt;tqh_last = (elm);                  \</div><div class="line">    (head)-&gt;tqh_last = &amp;(elm)-&gt;field.tqe_next;          \</div><div class="line">}</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaae87ca18c28066e1a96221e762d1209"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILQ_REMOVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">elm, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{               \</div><div class="line">    if (((elm)-&gt;field.tqe_next) != <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                \</div><div class="line">        (elm)-&gt;field.tqe_next-&gt;field.tqe_prev =         \</div><div class="line">            (elm)-&gt;field.tqe_prev;              \</div><div class="line">    else                                \</div><div class="line">        (head)-&gt;tqh_last = (elm)-&gt;field.tqe_prev;       \</div><div class="line">    *(elm)-&gt;field.tqe_prev = (elm)-&gt;field.tqe_next;         \</div><div class="line">}</div><div class="ttc" id="types_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="queue_8h_source.html">queue.h</a> 第 <a class="el" href="queue_8h_source.html#l00155">155</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

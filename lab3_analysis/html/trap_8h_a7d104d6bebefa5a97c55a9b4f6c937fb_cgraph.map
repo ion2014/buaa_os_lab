@@ -1,0 +1,8 @@
+<map id="trap_init" name="trap_init">
+<area shape="rect" id="node2" href="$traps_8c.html#a37d8ac8e14bbaa7c74a7588c266cb0bf" title="set_except_vector" alt="" coords="121,5,248,32"/>
+<area shape="rect" id="node3" href="$traps_8c.html#a8a0d170e642bef521c20f4741c154d1c" title="handle_reserved" alt="" coords="127,56,242,83"/>
+<area shape="rect" id="node4" href="$traps_8c.html#a0fb11316ce040c2ab3b3720784a20f95" title="handle_int" alt="" coords="144,107,225,133"/>
+<area shape="rect" id="node5" href="$traps_8c.html#a97c483a4f036f624d3a063a556e6a8f7" title="handle_mod" alt="" coords="139,157,231,184"/>
+<area shape="rect" id="node6" href="$traps_8c.html#ac28811c1372a3d2e53c12b0b4212e601" title="handle_tlb" alt="" coords="144,208,225,235"/>
+<area shape="rect" id="node7" href="$traps_8c.html#affb03c9b0193110ddf3dbc91850cd4dd" title="handle_sys" alt="" coords="141,259,229,285"/>
+</map>

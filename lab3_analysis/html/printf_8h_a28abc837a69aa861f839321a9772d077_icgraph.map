@@ -1,0 +1,11 @@
+<map id="printf" name="printf">
+<area shape="rect" id="node2" href="$init_8c.html#a298f168cfd313363d64f6109fcc92060" title="mips_init" alt="" coords="307,200,381,226"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="437,73,488,100"/>
+<area shape="rect" id="node4" href="$env_8c.html#a62e4f36682fdb5effac6a6dcb879c96f" title="env_free" alt="" coords="143,48,212,74"/>
+<area shape="rect" id="node5" href="$env_8c.html#ad634eb22a286adce67cf80c05c7325b3" title="env_destroy" alt="" coords="299,73,389,100"/>
+<area shape="rect" id="node6" href="$printf_8c.html#a40f799ba72bab6d6c27eb187e6d0fc7c" title="_panic" alt="" coords="147,200,207,226"/>
+<area shape="rect" id="node7" href="$pmap_8c.html#ab7aeaf27a95da4045fc98a220c1bd623" title="mips_detect_memory" alt="" coords="104,250,251,277"/>
+<area shape="rect" id="node8" href="$pmap_8c.html#ae4d40e5e1f90b0bd6a527663fc7461a0" title="mips_vm_init" alt="" coords="129,301,226,328"/>
+<area shape="rect" id="node9" href="$pmap_8c.html#ad7181cbb1ac0b5a723fdd3c7ab632be7" title="page_check" alt="" coords="131,352,223,378"/>
+<area shape="rect" id="node10" href="$pmap_8c.html#afcf5446100566f2c160587ea4acc4f4d" title="pageout" alt="" coords="143,402,211,429"/>
+</map>

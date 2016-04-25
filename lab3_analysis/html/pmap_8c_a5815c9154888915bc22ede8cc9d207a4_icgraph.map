@@ -1,0 +1,9 @@
+<map id="page_free" name="page_free">
+<area shape="rect" id="node2" href="$pmap_8c.html#a72fa2f2290751b6f77eec0c9d4eb5511" title="page_decref" alt="" coords="135,5,227,32"/>
+<area shape="rect" id="node5" href="$pmap_8c.html#a3a16e20dc4be360720097b9f3d61d85d" title="page_remove" alt="" coords="132,56,231,83"/>
+<area shape="rect" id="node7" href="$pmap_8c.html#ad7181cbb1ac0b5a723fdd3c7ab632be7" title="page_check" alt="" coords="416,107,508,133"/>
+<area shape="rect" id="node3" href="$env_8c.html#a62e4f36682fdb5effac6a6dcb879c96f" title="env_free" alt="" coords="289,5,358,32"/>
+<area shape="rect" id="node4" href="$env_8c.html#ad634eb22a286adce67cf80c05c7325b3" title="env_destroy" alt="" coords="417,5,507,32"/>
+<area shape="rect" id="node6" href="$pmap_8c.html#a11a0ccd31805e93b2a0e709b4e581972" title="page_insert" alt="" coords="279,56,368,83"/>
+<area shape="rect" id="node8" href="$pmap_8c.html#afcf5446100566f2c160587ea4acc4f4d" title="pageout" alt="" coords="428,56,496,83"/>
+</map>

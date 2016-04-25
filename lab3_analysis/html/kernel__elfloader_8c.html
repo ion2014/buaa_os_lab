@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/lib/kernel_elfloader.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_71ea85d0d20a7c338a108b826ae540da.html">lib</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">kernel_elfloader.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="kerelf_8h_source.html">kerelf.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pmap_8h_source.html">pmap.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+kernel_elfloader.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="kernel__elfloader_8c__incl.png" border="0" usemap="#_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2lib_2kernel__elfloader_8c" alt=""/></div>
+<map name="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2lib_2kernel__elfloader_8c" id="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2lib_2kernel__elfloader_8c">
+<area shape="rect" id="node2" href="kerelf_8h.html" title="kerelf.h" alt="" coords="5,109,69,136"/>
+<area shape="rect" id="node3" href="types_8h.html" title="types.h" alt="" coords="99,259,165,285"/>
+<area shape="rect" id="node4" href="pmap_8h.html" title="pmap.h" alt="" coords="197,109,262,136"/>
+<area shape="rect" id="node5" href="queue_8h.html" title="queue.h" alt="" coords="195,184,263,211"/>
+<area shape="rect" id="node6" href="mmu_8h.html" title="mmu.h" alt="" coords="287,184,350,211"/>
+<area shape="rect" id="node7" href="printf_8h.html" title="printf.h" alt="" coords="375,184,436,211"/>
+</map>
+</div>
+</div>
+<p><a href="kernel__elfloader_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a14fc3857bb4a64542faddd9b22a937eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel__elfloader_8c.html#a14fc3857bb4a64542faddd9b22a937eb">is_elf_format</a> (<a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *binary)</td></tr>
+<tr class="separator:a14fc3857bb4a64542faddd9b22a937eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088b5c7def849eb17d1806fe2676ad44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel__elfloader_8c.html#a088b5c7def849eb17d1806fe2676ad44">load_elf</a> (<a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *binary, int size, <a class="el" href="types_8h.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a> *entry_point, void *user_data, int(*map)(<a class="el" href="types_8h.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a> va, <a class="el" href="types_8h.html#a1382fcaa92d837ce7c0961788c8243d7">u_int32_t</a> sgsize, <a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *bin, <a class="el" href="types_8h.html#a1382fcaa92d837ce7c0961788c8243d7">u_int32_t</a> bin_size, void *user_data))</td></tr>
+<tr class="separator:a088b5c7def849eb17d1806fe2676ad44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a14fc3857bb4a64542faddd9b22a937eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_elf_format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *&#160;</td>
+          <td class="paramname"><em>binary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="kernel__elfloader_8c_source.html">kernel_elfloader.c</a> 第 <a class="el" href="kernel__elfloader_8c_source.html#l00021">21</a> 行定义.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="kernel__elfloader_8c_a14fc3857bb4a64542faddd9b22a937eb_icgraph.png" border="0" usemap="#kernel__elfloader_8c_a14fc3857bb4a64542faddd9b22a937eb_icgraph" alt=""/></div>
+<map name="kernel__elfloader_8c_a14fc3857bb4a64542faddd9b22a937eb_icgraph" id="kernel__elfloader_8c_a14fc3857bb4a64542faddd9b22a937eb_icgraph">
+<area shape="rect" id="node2" href="kernel__elfloader_8c.html#a088b5c7def849eb17d1806fe2676ad44" title="load_elf" alt="" coords="148,5,215,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a088b5c7def849eb17d1806fe2676ad44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int load_elf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a> *&#160;</td>
+          <td class="paramname"><em>entry_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(<a class="el" href="types_8h.html#a8f25a50daf29ce2cee1ec038a4d744ea">u_long</a> va, <a class="el" href="types_8h.html#a1382fcaa92d837ce7c0961788c8243d7">u_int32_t</a> sgsize, <a class="el" href="types_8h.html#ae2b02ed168fc99cff3851603910b1fb6">u_char</a> *bin, <a class="el" href="types_8h.html#a1382fcaa92d837ce7c0961788c8243d7">u_int32_t</a> bin_size, void *user_data)&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="kernel__elfloader_8c_source.html">kernel_elfloader.c</a> 第 <a class="el" href="kernel__elfloader_8c_source.html#l00046">46</a> 行定义.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="kernel__elfloader_8c_a088b5c7def849eb17d1806fe2676ad44_cgraph.png" border="0" usemap="#kernel__elfloader_8c_a088b5c7def849eb17d1806fe2676ad44_cgraph" alt=""/></div>
+<map name="kernel__elfloader_8c_a088b5c7def849eb17d1806fe2676ad44_cgraph" id="kernel__elfloader_8c_a088b5c7def849eb17d1806fe2676ad44_cgraph">
+<area shape="rect" id="node2" href="kernel__elfloader_8c.html#a14fc3857bb4a64542faddd9b22a937eb" title="is_elf_format" alt="" coords="120,5,215,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/drivers/gxconsole/console.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_2ac59234b54698b873905b92495e9ee3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_aeadec9e595449cc95fa5585183412bb.html">gxconsole</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">console.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="console_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  $Id: hello.c,v 1.3 2006/05/22 04:53:52 debug Exp $</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  GXemul demo:  Hello World</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  This file is in the Public Domain.</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dev__cons_8h.html">dev_cons.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*  Note: The ugly cast to a signed int (32-bit) causes the address to be</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    sign-extended correctly on MIPS when compiled in 64-bit mode  */</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="console_8c.html#abc10f43b9b4fbe9f1bb29fc01862047a">   13</a></span>&#160;<span class="preprocessor">#define PHYSADDR_OFFSET     ((signed int)0x80000000)</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="console_8c.html#a2c37478c5c4c2ea43839775fe2e6924e">   16</a></span>&#160;<span class="preprocessor">#define PUTCHAR_ADDRESS     (PHYSADDR_OFFSET +      \</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">                DEV_CONS_ADDRESS + DEV_CONS_PUTGETCHAR)</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="console_8c.html#ad9d1fe4994da5d17da0641246ee4b2e0">   18</a></span>&#160;<span class="preprocessor">#define HALT_ADDRESS        (PHYSADDR_OFFSET +      \</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">                DEV_CONS_ADDRESS + DEV_CONS_HALT)</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="printf_8c.html#ae67f0a19cbc10bae0d1e6f4926502a7c">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="console_8c.html#ae67f0a19cbc10bae0d1e6f4926502a7c">printcharc</a>(<span class="keywordtype">char</span> ch)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    *((<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *) <a class="code" href="console_8c.html#a2c37478c5c4c2ea43839775fe2e6924e">PUTCHAR_ADDRESS</a>) = ch;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="printf_8c.html#aee01d3a42fbcda425a19cbc4bd0194cd">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="console_8c.html#aee01d3a42fbcda425a19cbc4bd0194cd">halt</a>(<span class="keywordtype">void</span>)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    *((<span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *) <a class="code" href="console_8c.html#ad9d1fe4994da5d17da0641246ee4b2e0">HALT_ADDRESS</a>) = 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="console_8c.html#a4ac5cbbbaf1dfb454bb8e2009ec17357">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="console_8c.html#a4ac5cbbbaf1dfb454bb8e2009ec17357">printstr</a>(<span class="keywordtype">char</span> *s)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span> (*s)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="console_8c.html#ae67f0a19cbc10bae0d1e6f4926502a7c">printcharc</a>(*s++);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="ttc" id="dev__cons_8h_html"><div class="ttname"><a href="dev__cons_8h.html">dev_cons.h</a></div></div>
+<div class="ttc" id="console_8c_html_ae67f0a19cbc10bae0d1e6f4926502a7c"><div class="ttname"><a href="console_8c.html#ae67f0a19cbc10bae0d1e6f4926502a7c">printcharc</a></div><div class="ttdeci">void printcharc(char ch)</div><div class="ttdef"><b>Definition:</b> <a href="console_8c_source.html#l00022">console.c:22</a></div></div>
+<div class="ttc" id="console_8c_html_a4ac5cbbbaf1dfb454bb8e2009ec17357"><div class="ttname"><a href="console_8c.html#a4ac5cbbbaf1dfb454bb8e2009ec17357">printstr</a></div><div class="ttdeci">void printstr(char *s)</div><div class="ttdef"><b>Definition:</b> <a href="console_8c_source.html#l00034">console.c:34</a></div></div>
+<div class="ttc" id="console_8c_html_aee01d3a42fbcda425a19cbc4bd0194cd"><div class="ttname"><a href="console_8c.html#aee01d3a42fbcda425a19cbc4bd0194cd">halt</a></div><div class="ttdeci">void halt(void)</div><div class="ttdef"><b>Definition:</b> <a href="console_8c_source.html#l00028">console.c:28</a></div></div>
+<div class="ttc" id="console_8c_html_ad9d1fe4994da5d17da0641246ee4b2e0"><div class="ttname"><a href="console_8c.html#ad9d1fe4994da5d17da0641246ee4b2e0">HALT_ADDRESS</a></div><div class="ttdeci">#define HALT_ADDRESS</div><div class="ttdef"><b>Definition:</b> <a href="console_8c_source.html#l00018">console.c:18</a></div></div>
+<div class="ttc" id="console_8c_html_a2c37478c5c4c2ea43839775fe2e6924e"><div class="ttname"><a href="console_8c.html#a2c37478c5c4c2ea43839775fe2e6924e">PUTCHAR_ADDRESS</a></div><div class="ttdeci">#define PUTCHAR_ADDRESS</div><div class="ttdef"><b>Definition:</b> <a href="console_8c_source.html#l00016">console.c:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

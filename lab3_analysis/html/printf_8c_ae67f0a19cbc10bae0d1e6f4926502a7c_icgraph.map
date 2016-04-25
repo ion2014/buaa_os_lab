@@ -1,0 +1,4 @@
+<map id="printcharc" name="printcharc">
+<area shape="rect" id="node2" href="$console_8c.html#a4ac5cbbbaf1dfb454bb8e2009ec17357" title="printstr" alt="" coords="147,5,210,32"/>
+<area shape="rect" id="node3" href="$syscall__all_8c.html#aa08230e8a854cdea0092105a585a413e" title="sys_putchar" alt="" coords="132,56,225,83"/>
+</map>

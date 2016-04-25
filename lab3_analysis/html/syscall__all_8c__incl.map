@@ -1,0 +1,11 @@
+<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/lib/syscall_all.c" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/lib/syscall_all.c">
+<area shape="rect" id="node2" href="$dev__cons_8h.html" title="../drivers/gxconsole\l/dev_cons.h" alt="" coords="5,109,140,151"/>
+<area shape="rect" id="node3" href="$mmu_8h.html" title="mmu.h" alt="" coords="243,199,305,225"/>
+<area shape="rect" id="node5" href="$env_8h.html" title="env.h" alt="" coords="164,117,216,143"/>
+<area shape="rect" id="node8" href="$printf_8h.html" title="printf.h" alt="" coords="381,199,442,225"/>
+<area shape="rect" id="node10" href="$pmap_8h.html" title="pmap.h" alt="" coords="303,117,368,143"/>
+<area shape="rect" id="node11" href="$sched_8h.html" title="sched.h" alt="" coords="444,117,512,143"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="types.h" alt="" coords="160,273,225,300"/>
+<area shape="rect" id="node6" href="$queue_8h.html" title="queue.h" alt="" coords="151,199,219,225"/>
+<area shape="rect" id="node7" href="$trap_8h.html" title="trap.h" alt="" coords="20,199,75,225"/>
+</map>

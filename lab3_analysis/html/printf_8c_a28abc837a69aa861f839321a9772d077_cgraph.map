@@ -1,0 +1,6 @@
+<map id="printf" name="printf">
+<area shape="rect" id="node2" href="$print_8h.html#a482dc59b0c82a7d87c203090046f34a9" title="lp_Print" alt="" coords="104,56,171,83"/>
+<area shape="rect" id="node3" href="$print_8c.html#a6b9f661141c52a9b35e85ec6683e6e09" title="PrintNum" alt="" coords="222,5,298,32"/>
+<area shape="rect" id="node4" href="$print_8c.html#a8f5eedb0159fe0a4de1ee4e8d14e3d9c" title="PrintChar" alt="" coords="222,56,298,83"/>
+<area shape="rect" id="node5" href="$print_8c.html#a5c144b6b833c4525e73f043e1b2697c9" title="PrintString" alt="" coords="219,107,301,133"/>
+</map>

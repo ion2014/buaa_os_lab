@@ -21,7 +21,7 @@ extern char *KERNEL_SP;
 /* Overview:
  *  This function is for making an unique ID for every env.
  *
- * Pre-Condition:
+ * Precondition:
  *  Env e is exist.
  *
  * Post-Condition:
@@ -43,7 +43,7 @@ u_int mkenvid(struct Env *e)
  *  Converts an envid to an env pointer.
  *  If envid is 0 , set *penv = curenv;otherwise set *penv = envs[ENVX(envid)];
  *
- * Pre-Condition:
+ * Precondition:
  *  Env penv is exist,checkperm is 0 or 1.
  *
  * Post-Condition:
@@ -96,11 +96,15 @@ env_init(void)
 {
 	int i;
     /*Step 1: Initial env_free_list. */
-
+	LIST_INIT(&env_free_list);
 
     /*Step 2: Travel the elements in 'envs', init every element(mainly initial its status, mark it as free)
      * and inserts them into the env_free_list as reverse order. */
-
+	int i;
+	for (i = NENV - 1; i >= 0; i--) {
+		envs[i].env_status = ENV_FREE;
+		LIST_INSERT_HEAD(&env_free_list, &envs[i], env_link);
+	}
 
 }
 
@@ -159,7 +163,7 @@ env_setup_vm(struct Env *e)
  *  Allocates and Initializes a new environment.
  *  On success, the new environment is stored in *new.
  *
- * Pre-Condition:
+ * Precondition:
  *  If the new Env doesn't have parent, parent_id should be zero.
  *  env_init has been called before this function.
  *
@@ -182,8 +186,9 @@ env_alloc(struct Env **new, u_int parent_id)
 	struct Env *e;
     
     /*Step 1: Get a new Env from env_free_list*/
-
-    
+	if (LIST_EMPTY(&env_free_list))
+		return -E_NO_FREE_ENV;
+	e = LIST_FIRST(&env_free_list);
     /*Step 2: Call certain function(has been implemented) to init kernel memory layout for this new Env.
      *The function mainly maps the kernel address to this new Env address. */
 
@@ -210,7 +215,7 @@ env_alloc(struct Env **new, u_int parent_id)
  *   `bin_size` is the size of `bin`. `sgsize` is the
  * segment size in memory.
  *
- * Pre-Condition:
+ * Precondition:
  *   va aligned 4KB and bin can't be NULL.
  *
  * Post-Condition:

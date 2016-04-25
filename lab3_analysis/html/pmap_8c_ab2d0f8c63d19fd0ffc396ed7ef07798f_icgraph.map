@@ -1,0 +1,5 @@
+<map id="boot_map_segment" name="boot_map_segment">
+<area shape="rect" id="node2" href="$pmap_8c.html#ae4d40e5e1f90b0bd6a527663fc7461a0" title="mips_vm_init" alt="" coords="189,5,287,32"/>
+<area shape="rect" id="node3" href="$init_8c.html#a298f168cfd313363d64f6109fcc92060" title="mips_init" alt="" coords="335,5,409,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="457,5,508,32"/>
+</map>

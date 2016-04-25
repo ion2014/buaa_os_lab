@@ -1,0 +1,9 @@
+<map id="page_remove" name="page_remove">
+<area shape="rect" id="node2" href="$pmap_8c.html#a7b4af94efdd9dc748a592ed75885aa45" title="page_lookup" alt="" coords="153,5,247,32"/>
+<area shape="rect" id="node6" href="$pmap_8c.html#a5815c9154888915bc22ede8cc9d207a4" title="page_free" alt="" coords="161,56,239,83"/>
+<area shape="rect" id="node7" href="$pmap_8c.html#adf8d6d0ab1b2181f7080e286f9ba62fa" title="tlb_invalidate" alt="" coords="152,107,248,133"/>
+<area shape="rect" id="node3" href="$pmap_8c.html#abf9f6e3ea88d66cd02215aa3164c3675" title="pgdir_walk" alt="" coords="296,5,379,32"/>
+<area shape="rect" id="node4" href="$pmap_8c.html#a8c214bdcdeb8fd1c10b92064993b06c8" title="page_alloc" alt="" coords="427,5,511,32"/>
+<area shape="rect" id="node5" href="$mmu_8h.html#ab828ad07c8ebf898973f27778c543651" title="bzero" alt="" coords="559,5,613,32"/>
+<area shape="rect" id="node8" href="$mmu_8h.html#aabe64eca4cb3d9b7befe616a585597d8" title="tlb_out" alt="" coords="307,107,368,133"/>
+</map>

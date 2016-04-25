@@ -1,0 +1,10 @@
+<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/trap.h" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/trap.h">
+<area shape="rect" id="node2" href="$env_8h.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/include/env.h" alt="" coords="512,109,691,165"/>
+<area shape="rect" id="node3" href="$init_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/init.c" alt="" coords="5,213,184,269"/>
+<area shape="rect" id="node7" href="$traps_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/traps.c" alt="" coords="1019,213,1197,269"/>
+<area shape="rect" id="node9" href="$stackframe_8h.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/include/stackframe.h" alt="" coords="765,109,944,165"/>
+<area shape="rect" id="node4" href="$env_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/env.c" alt="" coords="208,213,387,269"/>
+<area shape="rect" id="node5" href="$sched_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/sched.c" alt="" coords="411,213,589,269"/>
+<area shape="rect" id="node6" href="$syscall__all_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/syscall_all.c" alt="" coords="613,213,792,269"/>
+<area shape="rect" id="node8" href="$pmap_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/mm/pmap.c" alt="" coords="816,213,995,269"/>
+</map>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/unistd.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_73124da8a6e04afc2f30d4aeaf45363b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">unistd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="unistd_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UNISTD_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define UNISTD_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="unistd_8h.html#a9ed5c3801cf1c1ad741395eac3123274">    4</a></span>&#160;<span class="preprocessor">#define __SYSCALL_BASE 9527</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="unistd_8h.html#a79f0f488ffaa55d13550aff6deac4d2e">    5</a></span>&#160;<span class="preprocessor">#define __NR_SYSCALLS 20</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="unistd_8h.html#a359678d5eb90a6407ab3ef817816db44">    8</a></span>&#160;<span class="preprocessor">#define SYS_putchar         ((__SYSCALL_BASE ) + (0 ) ) </span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="unistd_8h.html#a37d8094b79f948c5e54c8b8c4f73ab72">    9</a></span>&#160;<span class="preprocessor">#define SYS_getenvid        ((__SYSCALL_BASE ) + (1 ) )</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="unistd_8h.html#a6e6c7c0599e66a7fd6a4c635b711bc66">   10</a></span>&#160;<span class="preprocessor">#define SYS_yield           ((__SYSCALL_BASE ) + (2 ) )</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="unistd_8h.html#af69ea1c219ab2d6c34dd38a301c0dc27">   11</a></span>&#160;<span class="preprocessor">#define SYS_env_destroy     ((__SYSCALL_BASE ) + (3 ) )</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="unistd_8h.html#af609eb35cd549094debfdc484ccb8a4f">   12</a></span>&#160;<span class="preprocessor">#define SYS_set_pgfault_handler ((__SYSCALL_BASE ) + (4 ) )</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="unistd_8h.html#a080888f3dff39fb16a965c0797fff641">   13</a></span>&#160;<span class="preprocessor">#define SYS_mem_alloc       ((__SYSCALL_BASE ) + (5 ) )</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="unistd_8h.html#a498da1b0f2f794716a5025f9dad14afd">   14</a></span>&#160;<span class="preprocessor">#define SYS_mem_map         ((__SYSCALL_BASE ) + (6 ) )</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="unistd_8h.html#ab4e6782b05352e359b51d47bf7890569">   15</a></span>&#160;<span class="preprocessor">#define SYS_mem_unmap       ((__SYSCALL_BASE ) + (7 ) )</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="unistd_8h.html#a015449aa60f61723e6fea69df37c9b40">   16</a></span>&#160;<span class="preprocessor">#define SYS_env_alloc       ((__SYSCALL_BASE ) + (8 ) )</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="unistd_8h.html#ac0af638ae5c942cf591442a69d4af28b">   17</a></span>&#160;<span class="preprocessor">#define SYS_set_env_status  ((__SYSCALL_BASE ) + (9 ) )</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="unistd_8h.html#ae4dcee55ed9364011317ca7764aa90fc">   18</a></span>&#160;<span class="preprocessor">#define SYS_set_trapframe       ((__SYSCALL_BASE ) + (10 ) )</span></div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="unistd_8h.html#a8855a194ffd165fa45dc5ed9b491ec3c">   19</a></span>&#160;<span class="preprocessor">#define SYS_panic           ((__SYSCALL_BASE ) + (11 ) )</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="unistd_8h.html#a26d4eed5410f79422cafb341cba48859">   20</a></span>&#160;<span class="preprocessor">#define SYS_ipc_can_send        ((__SYSCALL_BASE ) + (12 ) )</span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="unistd_8h.html#ad0579e3f5058a17e593cc887377bc962">   21</a></span>&#160;<span class="preprocessor">#define SYS_ipc_recv        ((__SYSCALL_BASE ) + (13 ) )</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="unistd_8h.html#af359b78f90856d3a2ec1eaa3d38592b0">   22</a></span>&#160;<span class="preprocessor">#define SYS_cgetc           ((__SYSCALL_BASE ) + (14 ) )</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

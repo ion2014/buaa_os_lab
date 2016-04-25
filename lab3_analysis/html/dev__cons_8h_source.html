@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/drivers/gxconsole/dev_cons.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_2ac59234b54698b873905b92495e9ee3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_aeadec9e595449cc95fa5585183412bb.html">gxconsole</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dev_cons.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dev__cons_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TESTMACHINE_CONS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TESTMACHINE_CONS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Definitions used by the &quot;cons&quot; device in GXemul.</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *  $Id: dev_cons.h,v 1.2 2006/07/05 05:38:36 debug Exp $</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  This file is in the public domain.</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#define   DEV_CONS_ADDRESS        0x180003f8</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="dev__cons_8h.html#a4ad4e8bbe286c8523bd0251edadf35d3">   13</a></span>&#160;<span class="preprocessor">#define DEV_CONS_ADDRESS        0x10000000</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="dev__cons_8h.html#a77d1c2c0058cd5616bcb185b6fec73d5">   14</a></span>&#160;<span class="preprocessor">#define DEV_CONS_LENGTH         0x0000000000000020</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="dev__cons_8h.html#a45c3e82340345390d31c318448d5da69">   15</a></span>&#160;<span class="preprocessor">#define     DEV_CONS_PUTGETCHAR         0x0000</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="dev__cons_8h.html#aaa8e2f35dca2346657ca5d829d214e8b">   16</a></span>&#160;<span class="preprocessor">#define     DEV_CONS_HALT           0x0010</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/*  TESTMACHINE_CONS_H  */</span><span class="preprocessor"></span></div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

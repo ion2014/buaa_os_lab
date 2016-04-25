@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OOLab3: C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/print.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OOLab3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6dcb07f1ec309af8c3ed7fecc6d431d1.html">buaa_os_lab</a></li><li class="navelem"><a class="el" href="dir_042a1460cebe7c0b6b4ecb14daaae660.html">lab3_code</a></li><li class="navelem"><a class="el" href="dir_73124da8a6e04afc2f30d4aeaf45363b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">print.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+print.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="print_8h__incl.png" border="0" usemap="#_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8h" alt=""/></div>
+<map name="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8h" id="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="print_8h__dep__incl.png" border="0" usemap="#_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8hdep" alt=""/></div>
+<map name="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8hdep" id="_c_1_2_users_2longx_2_documents_2buaa__os__lab_2lab3__code_2include_2print_8hdep">
+<area shape="rect" id="node2" href="print_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/print.c" alt="" coords="5,109,184,165"/>
+<area shape="rect" id="node3" href="printf_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/printf.c" alt="" coords="208,109,387,165"/>
+</map>
+</div>
+</div>
+<p><a href="print_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a50149c4e5ab734cc002719b133a3d92f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print_8h.html#a50149c4e5ab734cc002719b133a3d92f">LP_MAX_BUF</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a50149c4e5ab734cc002719b133a3d92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a482dc59b0c82a7d87c203090046f34a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print_8h.html#a482dc59b0c82a7d87c203090046f34a9">lp_Print</a> (void(*output)(void *, char *, int), void *arg, char *fmt, va_list ap)</td></tr>
+<tr class="separator:a482dc59b0c82a7d87c203090046f34a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a50149c4e5ab734cc002719b133a3d92f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LP_MAX_BUF&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="print_8h_source.html">print.h</a> 第 <a class="el" href="print_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a482dc59b0c82a7d87c203090046f34a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lp_Print </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *, char *, int)&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="print_8c_source.html">print.c</a> 第 <a class="el" href="print_8c_source.html#l00030">30</a> 行定义.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="print_8h_a482dc59b0c82a7d87c203090046f34a9_cgraph.png" border="0" usemap="#print_8h_a482dc59b0c82a7d87c203090046f34a9_cgraph" alt=""/></div>
+<map name="print_8h_a482dc59b0c82a7d87c203090046f34a9_cgraph" id="print_8h_a482dc59b0c82a7d87c203090046f34a9_cgraph">
+<area shape="rect" id="node2" href="print_8c.html#a6b9f661141c52a9b35e85ec6683e6e09" title="PrintNum" alt="" coords="123,5,199,32"/>
+<area shape="rect" id="node3" href="print_8c.html#a8f5eedb0159fe0a4de1ee4e8d14e3d9c" title="PrintChar" alt="" coords="123,56,199,83"/>
+<area shape="rect" id="node4" href="print_8c.html#a5c144b6b833c4525e73f043e1b2697c9" title="PrintString" alt="" coords="120,107,203,133"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="print_8h_a482dc59b0c82a7d87c203090046f34a9_icgraph.png" border="0" usemap="#print_8h_a482dc59b0c82a7d87c203090046f34a9_icgraph" alt=""/></div>
+<map name="print_8h_a482dc59b0c82a7d87c203090046f34a9_icgraph" id="print_8h_a482dc59b0c82a7d87c203090046f34a9_icgraph">
+<area shape="rect" id="node2" href="printf_8c.html#a28abc837a69aa861f839321a9772d077" title="printf" alt="" coords="120,214,171,240"/>
+<area shape="rect" id="node7" href="printf_8c.html#a40f799ba72bab6d6c27eb187e6d0fc7c" title="_panic" alt="" coords="262,391,322,418"/>
+<area shape="rect" id="node3" href="init_8c.html#a298f168cfd313363d64f6109fcc92060" title="mips_init" alt="" coords="421,62,496,88"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="552,100,603,127"/>
+<area shape="rect" id="node5" href="env_8c.html#a62e4f36682fdb5effac6a6dcb879c96f" title="env_free" alt="" coords="257,188,327,215"/>
+<area shape="rect" id="node6" href="env_8c.html#ad634eb22a286adce67cf80c05c7325b3" title="env_destroy" alt="" coords="413,214,504,240"/>
+<area shape="rect" id="node8" href="pmap_8c.html#ab7aeaf27a95da4045fc98a220c1bd623" title="mips_detect_memory" alt="" coords="219,36,365,63"/>
+<area shape="rect" id="node9" href="pmap_8c.html#ae4d40e5e1f90b0bd6a527663fc7461a0" title="mips_vm_init" alt="" coords="243,87,341,114"/>
+<area shape="rect" id="node10" href="pmap_8c.html#ad7181cbb1ac0b5a723fdd3c7ab632be7" title="page_check" alt="" coords="246,290,338,316"/>
+<area shape="rect" id="node11" href="pmap_8c.html#afcf5446100566f2c160587ea4acc4f4d" title="pageout" alt="" coords="258,340,326,367"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

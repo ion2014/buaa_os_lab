@@ -22,4 +22,14 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lab3_code\include\asm-mips3k\regdef.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lab3_code\tools\scse0_3.lds">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
 </Project>

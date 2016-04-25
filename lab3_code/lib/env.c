@@ -182,13 +182,14 @@ env_setup_vm(struct Env *e)
 int
 env_alloc(struct Env **new, u_int parent_id)
 {
-	int r;//<-what does this variable do?
+	int r;
 	struct Env *e;
     
     /*Step 1: Get a new Env from env_free_list*/
 	if (LIST_EMPTY(&env_free_list))
 		return -E_NO_FREE_ENV;
 	e = LIST_FIRST(&env_free_list);
+    
     /*Step 2: Call certain function(has been implemented) to init kernel memory layout for this new Env.
      *The function mainly maps the kernel address to this new Env address. */
 	env_setup_vm(e);
@@ -199,8 +200,9 @@ env_alloc(struct Env **new, u_int parent_id)
 
     /*Step 4: focus on initializing env_tf structure, located at this new Env. 
      * especially the sp register,CPU status. */
-    e->env_tf.cp0_status = 0x10001004;
-	e->env_tf.regs[29] = 0x7f3fe000;
+	e->env_tf.cp0_status = 0x10001004;
+	e->env_tf.regs[29] = USTACKTOP;
+
     /*Step 5: Remove the new Env from Env free list*/
 	LIST_REMOVE(e, env_link);
 

@@ -1,10 +1,10 @@
-<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/mm/pmap.c" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/mm/pmap.c">
-<area shape="rect" id="node2" href="$mmu_8h.html" title="mmu.h" alt="" coords="228,184,291,211"/>
-<area shape="rect" id="node4" href="$pmap_8h.html" title="pmap.h" alt="" coords="293,109,359,136"/>
-<area shape="rect" id="node6" href="$printf_8h.html" title="printf.h" alt="" coords="366,184,427,211"/>
-<area shape="rect" id="node8" href="$env_8h.html" title="env.h" alt="" coords="144,109,196,136"/>
-<area shape="rect" id="node10" href="$error_8h.html" title="error.h" alt="" coords="434,109,493,136"/>
-<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="145,259,211,285"/>
-<area shape="rect" id="node5" href="$queue_8h.html" title="queue.h" alt="" coords="136,184,204,211"/>
-<area shape="rect" id="node9" href="$trap_8h.html" title="trap.h" alt="" coords="5,184,60,211"/>
+<map id="C:/Users/longx/Desktop/新建文件夹/mm/pmap.c" name="C:/Users/longx/Desktop/新建文件夹/mm/pmap.c">
+<area shape="rect" id="node2" href="$mmu_8h.html" title="mmu.h" alt="" coords="228,169,291,196"/>
+<area shape="rect" id="node4" href="$pmap_8h.html" title="pmap.h" alt="" coords="293,95,359,121"/>
+<area shape="rect" id="node6" href="$printf_8h.html" title="printf.h" alt="" coords="366,169,427,196"/>
+<area shape="rect" id="node8" href="$env_8h.html" title="env.h" alt="" coords="144,95,196,121"/>
+<area shape="rect" id="node10" href="$error_8h.html" title="error.h" alt="" coords="434,95,493,121"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="145,244,211,271"/>
+<area shape="rect" id="node5" href="$queue_8h.html" title="queue.h" alt="" coords="136,169,204,196"/>
+<area shape="rect" id="node9" href="$trap_8h.html" title="trap.h" alt="" coords="5,169,60,196"/>
 </map>

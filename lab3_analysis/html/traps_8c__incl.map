@@ -1,8 +1,8 @@
-<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/lib/traps.c" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/lib/traps.c">
-<area shape="rect" id="node2" href="$trap_8h.html" title="trap.h" alt="" coords="5,184,60,211"/>
-<area shape="rect" id="node4" href="$env_8h.html" title="env.h" alt="" coords="108,109,160,136"/>
-<area shape="rect" id="node7" href="$printf_8h.html" title="printf.h" alt="" coords="270,109,331,136"/>
-<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="65,259,131,285"/>
-<area shape="rect" id="node5" href="$queue_8h.html" title="queue.h" alt="" coords="136,184,204,211"/>
-<area shape="rect" id="node6" href="$mmu_8h.html" title="mmu.h" alt="" coords="228,184,291,211"/>
+<map id="C:/Users/longx/Desktop/新建文件夹/lib/traps.c" name="C:/Users/longx/Desktop/新建文件夹/lib/traps.c">
+<area shape="rect" id="node2" href="$trap_8h.html" title="trap.h" alt="" coords="5,169,60,196"/>
+<area shape="rect" id="node4" href="$env_8h.html" title="env.h" alt="" coords="108,95,160,121"/>
+<area shape="rect" id="node7" href="$printf_8h.html" title="printf.h" alt="" coords="270,95,331,121"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="65,244,131,271"/>
+<area shape="rect" id="node5" href="$queue_8h.html" title="queue.h" alt="" coords="136,169,204,196"/>
+<area shape="rect" id="node6" href="$mmu_8h.html" title="mmu.h" alt="" coords="228,169,291,196"/>
 </map>

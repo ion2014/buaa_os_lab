@@ -1,8 +1,8 @@
-<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/env.h" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/env.h">
-<area shape="rect" id="node2" href="$init_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/init.c" alt="" coords="5,109,184,165"/>
-<area shape="rect" id="node3" href="$env_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/env.c" alt="" coords="208,109,387,165"/>
-<area shape="rect" id="node4" href="$sched_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/sched.c" alt="" coords="411,109,589,165"/>
-<area shape="rect" id="node5" href="$syscall__all_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/syscall_all.c" alt="" coords="613,109,792,165"/>
-<area shape="rect" id="node6" href="$traps_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/traps.c" alt="" coords="816,109,995,165"/>
-<area shape="rect" id="node7" href="$pmap_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/mm/pmap.c" alt="" coords="1019,109,1197,165"/>
+<map id="C:/Users/longx/Desktop/新建文件夹/include/env.h" name="C:/Users/longx/Desktop/新建文件夹/include/env.h">
+<area shape="rect" id="node2" href="$init_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/init\l/init.c" alt="" coords="5,95,165,151"/>
+<area shape="rect" id="node3" href="$env_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/env.c" alt="" coords="189,102,349,143"/>
+<area shape="rect" id="node4" href="$sched_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/sched.c" alt="" coords="373,102,541,143"/>
+<area shape="rect" id="node5" href="$syscall__all_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/syscall_all.c" alt="" coords="565,102,760,143"/>
+<area shape="rect" id="node6" href="$traps_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/traps.c" alt="" coords="784,102,947,143"/>
+<area shape="rect" id="node7" href="$pmap_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/mm/pmap.c" alt="" coords="971,102,1146,143"/>
 </map>

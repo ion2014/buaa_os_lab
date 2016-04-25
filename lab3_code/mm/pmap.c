@@ -575,3 +575,19 @@ void pageout(int va, int context)
     printf("pageout:\t@@@___0x%x___@@@  ins a page \n", va);
 }
 
+void count_page() {
+	static int callnum = 0;
+	callnum++;
+	int usenum = 0, allocnum = 0, freenum = 0;
+	int i;
+	for (i = 0; i < npage; i++) {
+		if (pages[i].pp_ref != 0)
+			usenum++;
+	}
+	struct Page* iter;
+	LIST_FOREACH(iter, &page_free_list, pp_link)	
+		freenum++;
+	//
+	allocnum = npage - freenum - usenum;
+	printf("%d:usenum=%d,allocnum=%d,freenum=%d\n", callnum, usenum, allocnum, freenum);
+}

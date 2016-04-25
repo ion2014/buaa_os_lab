@@ -1,12 +1,12 @@
-<map id="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/printf.h" name="C:/Users/longx/Documents/buaa_os_lab/lab3_code/include/printf.h">
-<area shape="rect" id="node2" href="$pmap_8h.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/include/pmap.h" alt="" coords="613,109,792,165"/>
-<area shape="rect" id="node3" href="$init_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/init.c" alt="" coords="5,213,184,269"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/init/main.c" alt="" coords="208,213,387,269"/>
-<area shape="rect" id="node5" href="$env_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/env.c" alt="" coords="411,213,589,269"/>
-<area shape="rect" id="node7" href="$sched_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/sched.c" alt="" coords="816,213,995,269"/>
-<area shape="rect" id="node8" href="$syscall__all_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/syscall_all.c" alt="" coords="1019,213,1197,269"/>
-<area shape="rect" id="node9" href="$pmap_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/mm/pmap.c" alt="" coords="1221,213,1400,269"/>
-<area shape="rect" id="node10" href="$printf_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/printf.c" alt="" coords="968,109,1147,165"/>
-<area shape="rect" id="node11" href="$traps_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/traps.c" alt="" coords="1171,109,1349,165"/>
-<area shape="rect" id="node6" href="$kernel__elfloader_8c.html" title="C:/Users/longx/Documents\l/buaa_os_lab/lab3_code\l/lib/kernel_elfloader.c" alt="" coords="613,213,792,269"/>
+<map id="C:/Users/longx/Desktop/新建文件夹/include/printf.h" name="C:/Users/longx/Desktop/新建文件夹/include/printf.h">
+<area shape="rect" id="node2" href="$pmap_8h.html" title="C:/Users/longx/Desktop\l/新建文件夹/include\l/pmap.h" alt="" coords="557,109,717,165"/>
+<area shape="rect" id="node3" href="$init_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/init\l/init.c" alt="" coords="5,213,165,269"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/init\l/main.c" alt="" coords="189,213,349,269"/>
+<area shape="rect" id="node5" href="$env_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/env.c" alt="" coords="373,221,533,262"/>
+<area shape="rect" id="node7" href="$sched_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/sched.c" alt="" coords="741,221,909,262"/>
+<area shape="rect" id="node8" href="$syscall__all_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/syscall_all.c" alt="" coords="933,221,1128,262"/>
+<area shape="rect" id="node9" href="$pmap_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/mm/pmap.c" alt="" coords="1153,221,1327,262"/>
+<area shape="rect" id="node10" href="$printf_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/printf.c" alt="" coords="894,117,1055,158"/>
+<area shape="rect" id="node11" href="$traps_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/traps.c" alt="" coords="1080,117,1243,158"/>
+<area shape="rect" id="node6" href="$kernel__elfloader_8c.html" title="C:/Users/longx/Desktop\l/新建文件夹/lib/kernel\l_elfloader.c" alt="" coords="557,213,717,269"/>
 </map>

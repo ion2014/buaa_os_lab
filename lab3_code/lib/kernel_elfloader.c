@@ -62,23 +62,23 @@ int load_elf(u_char *binary, int size, u_long *entry_point, void *user_data,
 		return -1;
 	}
 
-	ptr_ph_table = binary + ehdr->e_phoff;
-	ph_entry_count = ehdr->e_phnum;
-	ph_entry_size = ehdr->e_phentsize;
+	ptr_ph_table = binary + ehdr->e_phoff;	//将指针移到一个段落开始的地方.
+	ph_entry_count = ehdr->e_phnum;			//这个是elf预先生成好的一个数, 所以读取就行了
+	ph_entry_size = ehdr->e_phentsize;		//这个是第一个区间的大小  
 
 	while (ph_entry_count--) {
-		phdr = (Elf32_Phdr *)ptr_ph_table;
+		phdr = (Elf32_Phdr *)ptr_ph_table;	//获取第一段
 
-		if (phdr->p_type == PT_LOAD) {
+		if (phdr->p_type == PT_LOAD) {		//如果是加载段
 			r = map(phdr->p_vaddr, phdr->p_memsz,
 					binary + phdr->p_offset, phdr->p_filesz, user_data);
-
+											//将其映射到物理内存中
 			if (r < 0) {
 				return r;
 			}
 		}
 
-		ptr_ph_table += ph_entry_size;
+		ptr_ph_table += ph_entry_size;		//将指针向后移动一段大小的距离
 	}
 
 	*entry_point = ehdr->e_entry;

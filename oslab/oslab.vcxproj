@@ -112,10 +112,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\lab3_code\lib\env.c" />
+    <ClCompile Include="..\lab3_code\lib\kernel_elfloader.c" />
     <ClCompile Include="..\lab3_code\mm\pmap.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\lab3_code\include\asm-mips3k\regdef.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\lab3_code\tools\scse0_3.lds" />

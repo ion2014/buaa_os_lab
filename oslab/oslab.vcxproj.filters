@@ -21,11 +21,9 @@
     <ClCompile Include="..\lab3_code\mm\pmap.c">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\lab3_code\include\asm-mips3k\regdef.h">
+    <ClCompile Include="..\lab3_code\lib\kernel_elfloader.c">
       <Filter>源文件</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\lab3_code\tools\scse0_3.lds">

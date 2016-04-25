@@ -232,15 +232,24 @@ static int load_icode_mapper(u_long va, u_int32_t sgsize,
 	int r;
 	u_long offset = va - ROUNDDOWN(va, BY2PG);
 
+	if (offset != 0)	return E_INVAL;
+
 	/*Step 1: load all content of bin into memory. */
 	for (i = 0; i < bin_size; i += BY2PG) {
+		r = page_alloc(&p);		//p->allocated page;
+		if (r < 0)	return r;	//allocate failed; 
+		p->pp_ref++;			//add reference;
+		env->env_pgdir[i / BY2PG] = (Pde*)page2kva(p);
+		bcopy(bin, KERNEL_SP + page2pa(p), BY2PG);
+
 		/* Hint: You should alloc a page and increase the reference count of it. */
 	}
 	/*Step 2: alloc pages to reach `sgsize` when `bin_size` < `sgsize`.
     * i has the value of `bin_size` now. */
 	while (i < sgsize) {
-
-
+		r = page_alloc(&p);		//p->allocated page;
+		if (r < 0)	return r;	//allocate failed; 
+		env->env_pgdir[i / BY2PG] = (Pde*)KADDR(p);
 	}
 	return 0;
 }

@@ -107,7 +107,7 @@ env_init(void)
 	}
 
 }
-
+//done
 
 /* Overview:
  *  Initialize the kernel virtual memory layout for environment e.
@@ -207,6 +207,7 @@ env_alloc(struct Env **new, u_int parent_id)
 	LIST_REMOVE(e, env_link);
 
 }
+//done
 
 /* Overview:
  *   This is a call back function for kernel's elf loader.
@@ -238,21 +239,22 @@ static int load_icode_mapper(u_long va, u_int32_t sgsize,
 	for (i = 0; i < bin_size; i += BY2PG) {
 		r = page_alloc(&p);		//p->allocated page;
 		if (r < 0)	return r;	//allocate failed; 
+		env->env_pgdir[VA2PFN(va + i)] = (Pde*)page2kva(p);
 		p->pp_ref++;			//add reference;
-		env->env_pgdir[i / BY2PG] = (Pde*)page2kva(p);
-		bcopy(bin, KERNEL_SP + page2pa(p), BY2PG);
-
+		bcopy(bin+i, page2pa(p), BY2PG);
 		/* Hint: You should alloc a page and increase the reference count of it. */
-	}
+	}//not sure what is the memory.
 	/*Step 2: alloc pages to reach `sgsize` when `bin_size` < `sgsize`.
     * i has the value of `bin_size` now. */
 	while (i < sgsize) {
 		r = page_alloc(&p);		//p->allocated page;
 		if (r < 0)	return r;	//allocate failed; 
-		env->env_pgdir[i / BY2PG] = (Pde*)KADDR(p);
+		env->env_pgdir[VA2PFN(va + i)] = (Pde*)page2kva(p);
+		i += BY2PG;
 	}
 	return 0;
 }
+//done
 /* Overview:
  *  Sets up the the initial stack and program binary for a user process.
  *  This function loads the complete binary image by using elf loader,
@@ -280,20 +282,20 @@ load_icode(struct Env *e, u_char *binary, u_int size)
     u_long perm;
     
     /*Step 1: alloc a page. */
-
-
+	r = page_alloc(&p);
+	if (r < 0)	return;
     /*Step 2: Use appropriate perm to set initial stack for new Env. */
     /*Hint: The user-stack should be writable? */
-
-
+	perm = ~0 & PTE_V;
+	*e->env_pgdir = page2kva(p) | perm;
     /*Step 3:load the binary by using elf loader. */
-
-
+	r = load_elf(binary, size, entry_point, e, load_icode_mapper);
+	if (r < 0)	return;
     /***Your Question Here***/
     /*Step 4:Set CPU's PC register as appropriate value. */
 	e->env_tf.pc = entry_point;
 }
-
+//Seem Done
 /* Overview:
  *  Allocates a new env with env_alloc, loads te named elf binary into 
  *  it with load_icode. This function is ONLY called during kernel
